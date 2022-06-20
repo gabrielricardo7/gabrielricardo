@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: deepskyblue;
+}
+
+a:hover {
+  color: goldenrod;
+}
+
+a:active {
+  color: crimson;
+}
+
+body {
+  margin-top: 88px;
+}
+
+@media (max-width: 600px) {
+  .MuiImageList-root {
+    display: block;
+  }
+  .MuiImageListItem-root {
+    margin: 4px;
+  }
+}
