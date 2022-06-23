@@ -1,28 +1,34 @@
 import React from "react";
-import Head from "next/head";
 import { links } from "../src/utils/data";
 import { Box, List, ListItem, Typography } from "@mui/material";
 
-const Contact = () => {
+function Contact() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Contact - Gabriel Ricardo</title>
-      </Head>
-      <Typography variant="h1" textAlign="center">
+      <Typography variant="h1" textAlign="center" my={2}>
         Contact
       </Typography>
       <Box mx="auto" my={7} width={300}>
         <List
-          sx={{ display: "flex", flexWrap: "no-wrap", m: "auto" }}
+          sx={{
+            display: "flex",
+            flexWrap: "no-wrap",
+            justifyContent: "center",
+            m: "auto",
+          }}
         >
           {links.map((link) => (
             <a
+              key={link.path}
               href={link.path}
               target={"_blank"}
               rel={"noopener noreferer"}
             >
-              <ListItem>
+              <ListItem
+                sx={{
+                  justifyContent: "center",
+                }}
+              >
                 <Typography variant="p" textAlign="center">
                   {link.icon}&nbsp;{link.name}
                 </Typography>
@@ -33,6 +39,6 @@ const Contact = () => {
       </Box>
     </React.Fragment>
   );
-};
+}
 
 export default Contact;

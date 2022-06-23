@@ -14,16 +14,3 @@ a:hover {
 a:active {
   color: crimson;
 }
-
-body {
-  margin-top: 88px;
-}
-
-@media (max-width: 600px) {
-  .MuiImageList-root {
-    display: block;
-  }
-  .MuiImageListItem-root {
-    margin: 4px;
-  }
-}

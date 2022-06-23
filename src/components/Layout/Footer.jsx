@@ -1,25 +1,21 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
+import { HiCode } from "react-icons/hi";
 
-const Footer = () => {
+function Footer() {
   return (
     <React.Fragment>
-      <footer>
-        <Box>
-          <Container>
-            <Box mt={2} textAlign="center">
-              <Typography variant="body2">
-                <hr />
-                Copyright &copy; 2022 Gabriel Ricardo.
-                <br />
-                &nbsp;
-              </Typography>
-            </Box>
-          </Container>
+      <Container component="footer">
+        <Box mt={1} mb={2} textAlign="center">
+          <HiCode />
+          <hr />
+          <Typography variant="body2" fontWeight={500}>
+            &copy; 2022 by Gabriel Ricardo.
+          </Typography>
         </Box>
-      </footer>
+      </Container>
     </React.Fragment>
   );
-};
+}
 
 export default Footer;

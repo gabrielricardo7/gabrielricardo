@@ -14,6 +14,13 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
+export const author = "Gabriel Ricardo";
+
+export const stack = "Front-End Developer";
+
+export const avatar =
+  "https://www.gravatar.com/avatar/f12a374ad0cbbadd6ef3613220d00095";
+
 export const pages = [
   { name: "Home", path: "/" },
   {
@@ -134,50 +141,50 @@ export const softSkills = [
 
 export const items = [
   {
-    img: "/static/images/react-entrega-s3-kenzishop-com-context-api-gabrielricardo7.vercel.app.png",
-    title: "Book Shop with Context API",
+    img: "/images/react-entrega-s3-kenzishop-com-context-api-gabrielricardo7.vercel.app.png",
+    title: "Book Shop w/ Context API",
     author: "@gabrielricardo7",
     url: "https://react-entrega-s3-kenzishop-com-context-api-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/react-entrega-s3-kenzieshop-gabrielricardo7.vercel.app.png",
-    title: "Fruit Shop with Redux",
+    img: "/images/react-entrega-s3-kenzieshop-gabrielricardo7.vercel.app.png",
+    title: "Fruit Shop w/ Redux",
     author: "@gabrielricardo7",
     url: "https://react-entrega-s3-kenzieshop-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/react-atividade-s5-context-api-com-typescript-gabrielricardo7.vercel.app.png",
-    title: "Shop Cart App with Context API and TypeScript",
+    img: "/images/react-atividade-s5-context-api-com-typescript-gabrielricardo7.vercel.app.png",
+    title: "Shop Cart w/ Context API & TS",
     author: "@gabrielricardo7",
     url: "https://react-atividade-s5-context-api-com-typescript-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/react-entrega-s5-criando-testes-gabrielricardo7.vercel.app.png",
-    title: "Address Lookup Tests by zip code",
+    img: "/images/react-entrega-s5-criando-testes-gabrielricardo7.vercel.app.png",
+    title: "Address Lookup by zip code",
     author: "@gabrielricardo7",
     url: "https://react-entrega-s5-criando-testes-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/react-atividade-s3-contador-com-redux-gabrielricardo7.vercel.app.png",
-    title: "Counter with React and Redux",
+    img: "/images/react-atividade-s3-contador-com-redux-gabrielricardo7.vercel.app.png",
+    title: "Counter w/ Redux",
     author: "@gabrielricardo7",
     url: "https://react-atividade-s3-contador-com-redux-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/react-atividade-s2-github-card-gabrielricardo7.vercel.app.png",
-    title: "GitHub Card Search with React",
+    img: "/images/react-atividade-s2-github-card-gabrielricardo7.vercel.app.png",
+    title: "GitHub Card Search w/ React",
     author: "@gabrielricardo7",
     url: "https://react-atividade-s2-github-card-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/react-atividade-s1-todo-list-gabrielricardo7.vercel.app.png",
-    title: "To-Do List with React",
+    img: "/images/react-atividade-s1-todo-list-gabrielricardo7.vercel.app.png",
+    title: "To-Do List w/ React",
     author: "@gabrielricardo7",
     url: "https://react-atividade-s1-todo-list-gabrielricardo7.vercel.app",
   },
   {
-    img: "/static/images/magic-8-ball-gabrielricardo7.png",
-    title: "Magic 8-Ball with HTML 5, CSS 3 & JavaScript",
+    img: "/images/magic-8-ball-gabrielricardo7.png",
+    title: "Magic 8-Ball w/ HTML+CSS+JS",
     author: "@gabrielricardo7",
     url: "https://kenzie-academy-brasil-developers.github.io/entrega-construa-um-jogo-de-azar-sprint-3-gabrielricardo7",
   },

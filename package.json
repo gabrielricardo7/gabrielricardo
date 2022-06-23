@@ -5,7 +5,9 @@
   "repository": "git@github.com:gabrielricardo7/gabrielricardo.git",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

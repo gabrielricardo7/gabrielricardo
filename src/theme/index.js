@@ -5,18 +5,7 @@ export const theme = createTheme({
     mode: "light",
   },
   typography: {
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(","),
+    fontFamily: ["Roboto", "sans-serif"].join(","),
     h1: {
       fontSize: 48,
     },
@@ -37,6 +26,26 @@ export const theme = createTheme({
     },
   },
   components: {
+    MuiImageList: {
+      styleOverrides: {
+        root: {
+          display: "flex",
+          flexFlow: "row wrap",
+          justifyContent: "center",
+          margin: "auto",
+          maxWidth: "1200px",
+          padding: "2px",
+        },
+      },
+    },
+    MuiImageListItem: {
+      styleOverrides: {
+        root: {
+          margin: "2px",
+          maxWidth: "512px",
+        },
+      },
+    },
     MuiImageListItemBar: {
       styleOverrides: {
         subtitle: {

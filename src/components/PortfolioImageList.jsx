@@ -6,15 +6,9 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 import InfoIcon from "@mui/icons-material/Info";
 import { items } from "../utils/data";
 
-const PortfolioImageList = () => {
+function PortfolioImageList() {
   return (
-    <ImageList
-      sx={{
-        m: "auto",
-        minWidth: 250,
-        maxWidth: 1000,
-      }}
-    >
+    <ImageList>
       {items.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -45,6 +39,6 @@ const PortfolioImageList = () => {
       ))}
     </ImageList>
   );
-};
+}
 
 export default PortfolioImageList;

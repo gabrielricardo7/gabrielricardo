@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import { HiCode } from "react-icons/hi";
 import {
   Avatar,
@@ -8,35 +7,44 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { author, avatar, stack } from "../src/utils/data";
 
-const Home = () => {
-  const me = "Gabriel Ricardo | Front-End Developer";
-
+function Home() {
   return (
     <React.Fragment>
-      <Head>
-        <title>{me}</title>
-      </Head>
-      <Box my={20}>
+      <Box mt={8} mb={16}>
         &nbsp;
         <Container>
           <Stack alignItems="center">
             <Avatar
-              alt="Gabriel Ricardo"
-              src="https://www.gravatar.com/avatar/f12a374ad0cbbadd6ef3613220d00095"
-              sx={{ width: "80px", height: "80px" }}
+              alt={author}
+              src={`${avatar}?s=240`}
+              sx={{ width: 120, height: 120 }}
             />
             <HiCode size={42} />
           </Stack>
-          <Typography variant="h1" textAlign="center">
-            {me.split("|")[0]}
-            <br />
-            <small>{me.split("|")[1]}</small>
+          <Typography
+            component="h1"
+            variant="h2"
+            textAlign="center"
+            fontWeight={700}
+          >
+            {author.toUpperCase()}
+          </Typography>
+          <Box
+            sx={{
+              width: "30%",
+              borderTop: "3px solid",
+              mx: "auto",
+            }}
+          ></Box>
+          <Typography component="h2" variant="h3" textAlign="center">
+            <small>{stack}</small>
           </Typography>
         </Container>
       </Box>
     </React.Fragment>
   );
-};
+}
 
 export default Home;
