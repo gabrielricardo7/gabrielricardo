@@ -159,12 +159,6 @@ export const items = [
     url: "https://react-atividade-s5-context-api-com-typescript-gabrielricardo7.vercel.app",
   },
   {
-    img: "/images/react-entrega-s5-criando-testes-gabrielricardo7.vercel.app.png",
-    title: "Address Lookup by zip code",
-    author: "@gabrielricardo7",
-    url: "https://react-entrega-s5-criando-testes-gabrielricardo7.vercel.app",
-  },
-  {
     img: "/images/react-atividade-s3-contador-com-redux-gabrielricardo7.vercel.app.png",
     title: "Counter w/ Redux",
     author: "@gabrielricardo7",
@@ -177,10 +171,28 @@ export const items = [
     url: "https://react-atividade-s2-github-card-gabrielricardo7.vercel.app",
   },
   {
+    img: "/images/react-entrega-s1-preparativos-para-o-torneio-tr-gabrielricardo7.vercel.app.png",
+    title: "Triwizard Tournament w/ React",
+    author: "@gabrielricardo7",
+    url: "https://react-entrega-s1-preparativos-para-o-torneio-tr-gabrielricardo7.vercel.app/",
+  },
+  {
     img: "/images/react-atividade-s1-todo-list-gabrielricardo7.vercel.app.png",
     title: "To-Do List w/ React",
     author: "@gabrielricardo7",
     url: "https://react-atividade-s1-todo-list-gabrielricardo7.vercel.app",
+  },
+  {
+    img: "/images/react-atividade-s1-numeros-aleatorios-gabrielricardo7.vercel.app.png",
+    title: "Random Numbers w/ React",
+    author: "@gabrielricardo7",
+    url: "https://react-atividade-s1-numeros-aleatorios-gabrielricardo7.vercel.app",
+  },
+  {
+    img: "/images/objeto-moeda-gabrielricardo7.png",
+    title: "Heads/Tails w/ HTML+CSS+JS",
+    author: "@gabrielricardo7",
+    url: "https://kenzie-academy-brasil-developers.github.io/entrega-objeto-moeda-sprint-6-gabrielricardo7",
   },
   {
     img: "/images/magic-8-ball-gabrielricardo7.png",
