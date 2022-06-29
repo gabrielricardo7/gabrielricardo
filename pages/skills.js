@@ -13,7 +13,7 @@ function Skills() {
     <React.Fragment>
       <Container>
         <Typography variant="h1" textAlign="center" my={2}>
-          Skills
+          Competências
         </Typography>
         <Typography variant="h2" textAlign="center" my={2}>
           Hard Skills
@@ -23,6 +23,7 @@ function Skills() {
           flexDirection="row"
           flexWrap="wrap"
           fontWeight={500}
+          justifyContent="center"
           m="auto"
           maxWidth={600}
           minWidth={300}
@@ -31,7 +32,8 @@ function Skills() {
             <List sx={{ lineHeight: "normal" }}>
               {techs.map((tech) => (
                 <ListItem key={tech.name}>
-                  {tech.icon}&nbsp;{tech.name}
+                  <tech.icon />
+                  &nbsp;{tech.name}
                 </ListItem>
               ))}
             </List>

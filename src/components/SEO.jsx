@@ -8,7 +8,7 @@ function SEO({ description, siteTitle, title }) {
       <meta name="description" content={description} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={avatar} />
-      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale" content="pt_BR" />
       <meta property="og:site_name" content={siteTitle} />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />

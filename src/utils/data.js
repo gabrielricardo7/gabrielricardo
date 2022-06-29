@@ -1,9 +1,13 @@
-import { GitHub, LinkedIn, Telegram } from "@mui/icons-material";
+import { GiSkills } from "react-icons/gi";
+import { ImInfo, ImPencil2 } from "react-icons/im";
+import { IoIosApps, IoIosMail } from "react-icons/io";
 import {
   SiCss3,
   SiDocker,
+  SiGithub,
   SiHtml5,
   SiJavascript,
+  SiLinkedin,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -11,193 +15,268 @@ import {
   SiPython,
   SiReact,
   SiRedux,
+  SiTelegram,
   SiTypescript,
 } from "react-icons/si";
+import { TiHome } from "react-icons/ti";
 
 export const author = "Gabriel Ricardo";
 
-export const stack = "Front-End Developer";
+export const stack = "Desenvolvedor Front-End";
 
 export const avatar =
   "https://www.gravatar.com/avatar/f12a374ad0cbbadd6ef3613220d00095";
 
 export const pages = [
-  { name: "Home", path: "/" },
+  { name: "Início", path: "/", icon: TiHome },
   {
-    name: "About",
-    path: "/about",
+    name: "Blog",
+    path: "/blog",
+    icon: ImPencil2,
   },
   {
-    name: "Skills",
-    path: "/skills",
-  },
-  {
-    name: "Portfolio",
+    name: "Projetos",
     path: "/portfolio",
+    icon: IoIosApps,
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: "Competências",
+    path: "/skills",
+    icon: GiSkills,
+  },
+  {
+    name: "Sobre mim",
+    path: "/me",
+    icon: ImInfo,
+  },
+  {
+    name: "Contato",
+    path: "/links",
+    icon: IoIosMail,
   },
 ];
 
 export const links = [
   {
+    name: "Email",
+    path: "mailto:gabrielricardo7@gmail.com",
+    icon: IoIosMail,
+  },
+  {
     name: "GitHub",
     path: "https://github.com/gabrielricardo7",
-    icon: <GitHub />,
+    icon: SiGithub,
   },
   {
     name: "LinkedIn",
     path: "https://linkedin.com/in/gabrielricardo7",
-    icon: <LinkedIn />,
+    icon: SiLinkedin,
   },
   {
     name: "Telegram",
     path: "https://t.me/gabrielricardo7",
-    icon: <Telegram />,
+    icon: SiTelegram,
   },
 ];
 
 export const techs = [
   {
     name: "HTML 5",
-    icon: <SiHtml5 />,
+    icon: SiHtml5,
   },
   {
     name: "CSS 3",
-    icon: <SiCss3 />,
+    icon: SiCss3,
   },
   {
     name: "JavaScript",
-    icon: <SiJavascript />,
+    icon: SiJavascript,
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript />,
+    icon: SiTypescript,
   },
   {
     name: "Python",
-    icon: <SiPython />,
+    icon: SiPython,
   },
   {
     name: "React",
-    icon: <SiReact />,
+    icon: SiReact,
   },
   {
     name: "Redux",
-    icon: <SiRedux />,
+    icon: SiRedux,
   },
   {
     name: "Node.js",
-    icon: <SiNodedotjs />,
+    icon: SiNodedotjs,
   },
   {
     name: "Next.js",
-    icon: <SiNextdotjs />,
+    icon: SiNextdotjs,
   },
   {
     name: "PostgreSQL",
-    icon: <SiPostgresql />,
+    icon: SiPostgresql,
   },
   {
     name: "MongoDB",
-    icon: <SiMongodb />,
+    icon: SiMongodb,
   },
   {
     name: "Docker",
-    icon: <SiDocker />,
+    icon: SiDocker,
   },
 ];
 
 export const hardSkills = [
-  "Semantic Web",
-  "Programming Logic",
-  "Version Control with Git",
-  "Object Oriented Programming",
-  "Functional Programming",
-  "Agile Methodologies",
-  "TDD with Jest, BDD with Cucumber",
-  "UX notions",
+  "Web Semântica",
+  "Lógica de Programação",
+  "Controle de Versão com Git",
+  "Programação Orientada a Objetos",
+  "Programação Funcional",
+  "Metodologias Ágeis",
+  "TDD com Jest, BDD com Cucumber",
+  "Noções de UX",
   "State Management",
-  "Componentization",
+  "Componentização",
   "APIs RESTful",
-  "Asynchronous Programming",
+  "Programação Assíncrona",
 ];
 
 export const softSkills = [
-  "Adapting to new work environments",
-  "Assessment",
-  "Autonomy",
-  "Clear and assertive communication",
-  "Collaboration",
+  "Adaptação a novos ambientes",
+  "Autonomia",
+  "Comunicação clara e assertiva",
+  "Colaboração",
   "Feedback",
-  "Flexibility",
-  "Learn from mistakes",
-  "Persistence",
-  "Productivity",
-  "Time management",
+  "Flexibilidade",
+  "Aprender com os erros",
+  "Persistência",
+  "Produtividade",
+  "Gerenciamento de tempo",
 ];
 
-export const items = [
+export const projects = [
   {
-    img: "/images/react-entrega-s3-kenzishop-com-context-api-gabrielricardo7.vercel.app.png",
-    title: "Book Shop w/ Context API",
-    author: "@gabrielricardo7",
-    url: "https://react-entrega-s3-kenzishop-com-context-api-gabrielricardo7.vercel.app",
+    img: "/images/capstone-oil-cycle.png",
+    title: "Oil Cycle",
+    info: "Incentivar o descarte correto do óleo, mostrando para usuários e empresas interessadas.",
+    tags: "React | Context API | Chakra UI",
+    repo: "https://github.com/victornunesc/Oil-Cycle",
+    url: "https://oil-cycle.vercel.app",
   },
   {
-    img: "/images/react-entrega-s3-kenzieshop-gabrielricardo7.vercel.app.png",
-    title: "Fruit Shop w/ Redux",
-    author: "@gabrielricardo7",
-    url: "https://react-entrega-s3-kenzieshop-gabrielricardo7.vercel.app",
+    img: "/images/book-shop-react-context.png",
+    title: "Book Shop",
+    info: "App com carrinho de E-commerce, aplicação desenvolvida em React com o uso de Context API.",
+    tags: "React | Context API",
+    repo: "https://github.com/gabrielricardo7/book-shop-react-context",
+    url: "https://book-shop-react-context.vercel.app",
   },
   {
-    img: "/images/react-atividade-s5-context-api-com-typescript-gabrielricardo7.vercel.app.png",
-    title: "Shop Cart w/ Context API & TS",
-    author: "@gabrielricardo7",
-    url: "https://react-atividade-s5-context-api-com-typescript-gabrielricardo7.vercel.app",
+    img: "/images/fruit-shop-react-redux.png",
+    title: "Fruit Shop",
+    info: "App com carrinho de E-commerce, aplicação desenvolvida em React, gerenciamento feito com Redux.",
+    tags: "React | Redux",
+    repo: "https://github.com/gabrielricardo7/fruit-shop-react-redux",
+    url: "https://fruit-shop-react-redux.vercel.app",
   },
   {
-    img: "/images/react-atividade-s3-contador-com-redux-gabrielricardo7.vercel.app.png",
-    title: "Counter w/ Redux",
-    author: "@gabrielricardo7",
-    url: "https://react-atividade-s3-contador-com-redux-gabrielricardo7.vercel.app",
+    img: "/images/shop-cart-react-context-ts.png",
+    title: "Shop Cart",
+    info: "Aplicação simples, onde podemos adicionar ou remover produtos de um carrinho de compras.",
+    tags: "React | Context API | TypeScript",
+    repo: "https://github.com/gabrielricardo7/shop-cart-react-context-ts",
+    url: "https://shop-cart-react-context-ts.vercel.app",
   },
   {
-    img: "/images/react-atividade-s2-github-card-gabrielricardo7.vercel.app.png",
-    title: "GitHub Card Search w/ React",
-    author: "@gabrielricardo7",
-    url: "https://react-atividade-s2-github-card-gabrielricardo7.vercel.app",
+    img: "/images/counter-react-redux.png",
+    title: "Contador",
+    info: "Feito com Redux, uma biblioteca JavaScript de código aberto para gerenciar o estado do aplicativo.",
+    tags: "React | Redux",
+    repo: "https://github.com/gabrielricardo7/counter-react-redux",
+    url: "https://contador-react-redux.vercel.app",
   },
   {
-    img: "/images/react-entrega-s1-preparativos-para-o-torneio-tr-gabrielricardo7.vercel.app.png",
-    title: "Triwizard Tournament w/ React",
-    author: "@gabrielricardo7",
-    url: "https://react-entrega-s1-preparativos-para-o-torneio-tr-gabrielricardo7.vercel.app/",
+    img: "/images/github-card-search-react.png",
+    title: "GitHub Card Search",
+    info: (
+      <>
+        Busca por um repositório, utilizando a&nbsp;
+        <a
+          href="https://docs.github.com/en/rest/reference/repos#get-a-repository"
+          target="_blank"
+          rel="noopener noreferer"
+        >
+          API do GitHub
+        </a>
+        &nbsp;e renderiza um card com algumas informações.
+      </>
+    ),
+    tags: "React",
+    repo: "https://github.com/gabrielricardo7/github-card-search-react",
+    url: "https://github-card-search-react.vercel.app",
   },
   {
-    img: "/images/react-atividade-s1-todo-list-gabrielricardo7.vercel.app.png",
-    title: "To-Do List w/ React",
-    author: "@gabrielricardo7",
-    url: "https://react-atividade-s1-todo-list-gabrielricardo7.vercel.app",
+    img: "/images/torneio-tribruxo-react.png",
+    title: "Torneio Tribruxo",
+    info: (
+      <>
+        App faz a requisição na&nbsp;
+        <a
+          href="http://hp-api.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferer"
+        >
+          API do Harry Potter
+        </a>
+        &nbsp;e renderiza três personagens de casas distintas.
+      </>
+    ),
+    tags: "React",
+    repo: "https://github.com/gabrielricardo7/torneio-tribruxo-react",
+    url: "https://torneio-tribruxo-react.vercel.app",
   },
   {
-    img: "/images/react-atividade-s1-numeros-aleatorios-gabrielricardo7.vercel.app.png",
-    title: "Random Numbers w/ React",
-    author: "@gabrielricardo7",
-    url: "https://react-atividade-s1-numeros-aleatorios-gabrielricardo7.vercel.app",
+    img: "/images/todo-list-react.png",
+    title: "To-do List",
+    info: "Lista de afazeres, feita para praticar o uso de callbacks no React e também o Spread Operator.",
+    tags: "React",
+    repo: "https://github.com/gabrielricardo7/todo-list-react",
+    url: "https://todo-list-react-gabrielricardo7.vercel.app",
+  },
+  {
+    img: "/images/numeros-aleatorios-react.png",
+    title: "Números Aleatórios",
+    info: "Renderiza aleatoriamente valores de 0 a 100, com manipulação de eventos do usuário no navegador.",
+    tags: "React",
+    repo: "https://github.com/gabrielricardo7/numeros-aleatorios-react",
+    url: "https://numeros-aleatorios-react.vercel.app/",
   },
   {
     img: "/images/objeto-moeda-gabrielricardo7.png",
-    title: "Heads/Tails w/ HTML+CSS+JS",
-    author: "@gabrielricardo7",
-    url: "https://kenzie-academy-brasil-developers.github.io/entrega-objeto-moeda-sprint-6-gabrielricardo7",
+    title: "Objeto Moeda",
+    info: "Representa se a jogada de uma moeda cai do lado cara ou coroa, com o auxílio de métodos.",
+    tags: "HTML5 | CSS3 | JavaScript",
+    repo: "https://github.com/gabrielricardo7/objeto-moeda",
+    url: "https://gabrielricardo7.github.io/objeto-moeda",
   },
   {
     img: "/images/magic-8-ball-gabrielricardo7.png",
-    title: "Magic 8-Ball w/ HTML+CSS+JS",
-    author: "@gabrielricardo7",
-    url: "https://kenzie-academy-brasil-developers.github.io/entrega-construa-um-jogo-de-azar-sprint-3-gabrielricardo7",
+    title: "Bola-8 Mágica",
+    info: "Esfera de plástico, parecida com uma bola oito grande, usada para adivinhar ou pedir conselhos.",
+    tags: "HTML5 | CSS3 | JavaScript",
+    repo: "https://github.com/gabrielricardo7/magic-8-ball",
+    url: "https://gabrielricardo7.github.io/magic-8-ball",
+  },
+  {
+    img: "/images/labirinto-js-gabrielricardo7.png",
+    title: "Labirinto JS",
+    info: "Array 2D de células, permite que o jogador se mova num passo de cada vez com as teclas de cursor.",
+    tags: "HTML5 | CSS3 | JavaScript",
+    repo: "https://github.com/gabrielricardo7/labirinto-js",
+    url: "https://gabrielricardo7.github.io/labirinto-js",
   },
 ];

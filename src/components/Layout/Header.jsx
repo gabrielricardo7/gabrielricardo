@@ -17,6 +17,7 @@ import {
 import { HiCode } from "react-icons/hi";
 import { author, avatar, links, pages } from "../../utils/data";
 import MenuIcon from "@mui/icons-material/Menu";
+import MUISwitch from "../MUISwitch";
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -41,7 +42,7 @@ function Header() {
     <React.Fragment>
       <CssBaseline />
       <AppBar position="sticky">
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={{ px: 1 }}>
           <Toolbar disableGutters>
             {/* <HiCode
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
@@ -73,7 +74,7 @@ function Header() {
             >
               <IconButton
                 size="large"
-                aria-label="account of current user"
+                aria-label={`${author} icon`}
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
@@ -102,6 +103,8 @@ function Header() {
                 {pages.map((page) => (
                   <Link key={page.path} href={page.path}>
                     <MenuItem onClick={handleCloseNavMenu}>
+                      <page.icon />
+                      &nbsp;
                       <Typography textAlign="center">
                         {page.name}
                       </Typography>
@@ -111,7 +114,7 @@ function Header() {
               </Menu>
             </Box>
             <HiCode
-              sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+              sx={{ display: { xs: "flex", md: "none" }, mr: 0 }}
             />
             &nbsp;
             <Link href={pages[0].path}>
@@ -120,18 +123,18 @@ function Header() {
                 noWrap
                 component="p"
                 sx={{
-                  mr: 2,
+                  ml: 1,
                   display: { xs: "flex", md: "none" },
                   flexGrow: 1,
                   fontFamily: "monospace",
                   fontWeight: 700,
                   // letterSpacing: ".3rem",
                   color: "inherit",
-                  textDecoration: "none",
                   cursor: "pointer",
+                  textDecoration: "none",
                 }}
               >
-                {author}
+                <small>{author}</small>
               </Typography>
             </Link>
             <Box
@@ -146,13 +149,15 @@ function Header() {
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
-                    {page.name}
+                    <page.icon />
+                    &nbsp;{page.name}
                   </Button>
                 </Link>
               ))}
             </Box>
+            <MUISwitch />
             <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Contact links">
+              <Tooltip title="Links de contato">
                 <IconButton
                   onClick={handleOpenUserMenu}
                   sx={{ p: 0 }}
@@ -184,7 +189,8 @@ function Header() {
                     rel={"noopener noreferer"}
                   >
                     <MenuItem onClick={handleCloseUserMenu}>
-                      {link.icon}&nbsp;
+                      <link.icon />
+                      &nbsp;
                       <Typography textAlign="center">
                         {link.name}
                       </Typography>

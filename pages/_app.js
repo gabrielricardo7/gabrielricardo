@@ -1,12 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import SEO from "../src/components/seo";
+import BaseTheme from "../src/theme";
+import SEO from "../src/components/SEO";
 import { useRouter } from "next/router";
 import { author, stack } from "../src/utils/data";
-import { Footer, Header } from "../src/components/Layout";
-import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import { theme } from "../src/theme";
+import { Footer, Header } from "../src/components/Layout";
 import "../styles/global.css";
 
 function App({ Component, pageProps }) {
@@ -24,13 +23,13 @@ function App({ Component, pageProps }) {
       <Head>
         <title>{title}</title>
       </Head>
-      <ThemeProvider theme={theme}>
+      <BaseTheme>
         <SEO description={stack} siteTitle={author} title={title} />
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
         <Footer />
-      </ThemeProvider>
+      </BaseTheme>
     </React.Fragment>
   );
 }
