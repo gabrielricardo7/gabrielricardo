@@ -42,7 +42,7 @@ function Header() {
     <React.Fragment>
       <CssBaseline />
       <AppBar position="sticky">
-        <Container maxWidth="xl" sx={{ px: 1 }}>
+        <Container maxWidth="xl" sx={{ px: 0.5 }}>
           <Toolbar disableGutters>
             {/* <HiCode
             sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
@@ -113,9 +113,7 @@ function Header() {
                 ))}
               </Menu>
             </Box>
-            <HiCode
-              sx={{ display: { xs: "flex", md: "none" }, mr: 0 }}
-            />
+            <HiCode sx={{ display: { xs: "flex", md: "none" } }} />
             &nbsp;
             <Link href={pages[0].path}>
               <Typography
@@ -123,7 +121,6 @@ function Header() {
                 noWrap
                 component="p"
                 sx={{
-                  ml: 1,
                   display: { xs: "flex", md: "none" },
                   flexGrow: 1,
                   fontFamily: "monospace",
@@ -134,7 +131,7 @@ function Header() {
                   textDecoration: "none",
                 }}
               >
-                <small>{author}</small>
+                {author}
               </Typography>
             </Link>
             <Box
