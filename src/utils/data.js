@@ -35,12 +35,12 @@ export const pages = [
     icon: ImPencil2,
   },
   {
-    name: "Projetos",
+    name: "Portfolio",
     path: "/portfolio",
     icon: IoIosApps,
   },
   {
-    name: "Competências",
+    name: "Skills",
     path: "/skills",
     icon: GiSkills,
   },

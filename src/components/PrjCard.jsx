@@ -7,7 +7,7 @@ import {
   Button,
   Typography,
 } from "@mui/material";
-import { GitHub } from "@mui/icons-material";
+import { GitHub, Public } from "@mui/icons-material";
 
 export default function PrjCard({ project }) {
   return (
@@ -52,7 +52,12 @@ export default function PrjCard({ project }) {
           target={"_blank"}
           rel={"noopener noreferer"}
         >
-          <Button size="small" variant="outlined">
+          <Button
+            size="small"
+            startIcon={<Public />}
+            variant="outlined"
+            sx={{ p: "3px 6px" }}
+          >
             Publicação
           </Button>
         </a>

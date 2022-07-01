@@ -16,7 +16,8 @@ function App({ Component, pageProps }) {
       ? "Home"
       : path[1].toUpperCase() + path.slice(2);
 
-  const title = page === "Home" ? author : `${page} | ${author}`;
+  const title =
+    page === "Home" ? `${author} | ${stack}` : `${page} | ${author}`;
 
   return (
     <React.Fragment>
