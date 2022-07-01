@@ -2,14 +2,14 @@ import { GiSkills } from "react-icons/gi";
 import { ImInfo, ImPencil2 } from "react-icons/im";
 import { IoIosApps, IoIosMail } from "react-icons/io";
 import {
-  SiArchlinux,
+  SiApple,
   SiCss3,
   SiDocker,
-  SiFedora,
   SiGithub,
   SiHtml5,
   SiJavascript,
   SiLinkedin,
+  SiLinux,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -19,7 +19,7 @@ import {
   SiRedux,
   SiTelegram,
   SiTypescript,
-  SiUbuntu,
+  SiWindows,
 } from "react-icons/si";
 import { TiHome } from "react-icons/ti";
 
@@ -82,18 +82,18 @@ export const links = [
   },
 ];
 
-export const distros = [
+export const systems = [
   {
-    name: "Ubuntu",
-    icon: SiUbuntu,
+    name: "GNU/Linux",
+    icon: SiLinux,
   },
   {
-    name: "Arch Linux",
-    icon: SiArchlinux,
+    name: "macOS",
+    icon: SiApple,
   },
   {
-    name: "Fedora",
-    icon: SiFedora,
+    name: "Windows",
+    icon: SiWindows,
   },
 ];
 

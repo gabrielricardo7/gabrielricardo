@@ -1,10 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { ColorModeContext } from "../context";
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 function BaseTheme(props) {
   const [mode, setMode] = useState("dark");
@@ -20,7 +16,7 @@ function BaseTheme(props) {
     []
   );
 
-  let theme = useMemo(
+  const theme = useMemo(
     () =>
       createTheme({
         palette: {
@@ -50,8 +46,6 @@ function BaseTheme(props) {
       }),
     [mode]
   );
-
-  theme = responsiveFontSizes(theme);
 
   return (
     <React.Fragment>

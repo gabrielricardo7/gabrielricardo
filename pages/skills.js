@@ -1,18 +1,17 @@
 import React from "react";
 import {
-  distros,
-  hardSkills,
-  softSkills,
-  techs,
-} from "../src/utils/data";
-import {
   Box,
   Container,
   List,
   ListItem,
   Typography,
 } from "@mui/material";
-import { SiApple, SiLinux, SiWindows } from "react-icons/si";
+import {
+  hardSkills,
+  softSkills,
+  systems,
+  techs,
+} from "../src/utils/data";
 
 function Skills() {
   return (
@@ -21,7 +20,7 @@ function Skills() {
         <Typography variant="h1" textAlign="center" my={2}>
           Habilidades
         </Typography>
-        <Typography variant="h2" textAlign="center">
+        <Typography component="h2" variant="h4" textAlign="center">
           <small>Sistemas Operacionais</small>
         </Typography>
         <Box
@@ -42,41 +41,15 @@ function Skills() {
               alignItems: "flex-start",
             }}
           >
-            <ListItem>
-              <SiApple />
-              &nbsp;macOS
-            </ListItem>
-            <ListItem sx={{ px: 0 }}>
-              <details>
-                <summary
-                  style={{
-                    cursor: "pointer",
-                    display: "flex",
-                  }}
-                >
-                  <SiLinux />
-                  &nbsp;GNU/Linux
-                </summary>
-                <List sx={{ lineHeight: "normal" }}>
-                  {distros.map((distro) => (
-                    <ListItem
-                      key={distro.name}
-                      sx={{ px: 0, py: 0.5 }}
-                    >
-                      <distro.icon />
-                      &nbsp;{distro.name}
-                    </ListItem>
-                  ))}
-                </List>
-              </details>
-            </ListItem>
-            <ListItem>
-              <SiWindows />
-              &nbsp;Windows
-            </ListItem>
+            {systems.map((os) => (
+              <ListItem key={os.name} sx={{ px: 0.75 }}>
+                <os.icon />
+                &nbsp;{os.name}
+              </ListItem>
+            ))}
           </List>
         </Box>
-        <Typography variant="h2" textAlign="center" my={2}>
+        <Typography variant="h2" textAlign="center">
           Hard Skills
         </Typography>
         <Box
@@ -107,7 +80,7 @@ function Skills() {
             </List>
           </Box>
         </Box>
-        <Typography variant="h2" textAlign="center" my={2}>
+        <Typography variant="h2" textAlign="center">
           Soft Skills
         </Typography>
         <Box
