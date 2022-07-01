@@ -2,8 +2,10 @@ import { GiSkills } from "react-icons/gi";
 import { ImInfo, ImPencil2 } from "react-icons/im";
 import { IoIosApps, IoIosMail } from "react-icons/io";
 import {
+  SiArchlinux,
   SiCss3,
   SiDocker,
+  SiFedora,
   SiGithub,
   SiHtml5,
   SiJavascript,
@@ -17,6 +19,7 @@ import {
   SiRedux,
   SiTelegram,
   SiTypescript,
+  SiUbuntu,
 } from "react-icons/si";
 import { TiHome } from "react-icons/ti";
 
@@ -76,6 +79,21 @@ export const links = [
     name: "Telegram",
     path: "https://t.me/gabrielricardo7",
     icon: SiTelegram,
+  },
+];
+
+export const distros = [
+  {
+    name: "Ubuntu",
+    icon: SiUbuntu,
+  },
+  {
+    name: "Arch Linux",
+    icon: SiArchlinux,
+  },
+  {
+    name: "Fedora",
+    icon: SiFedora,
   },
 ];
 
